@@ -2,6 +2,9 @@
 
 namespace Album;
 
+use Laminas\Router\Http\Segment;
+use Laminas\ServiceManager\Factory\InvokableFactory;
+
 return [
     'router' => [
         'routes' => [
