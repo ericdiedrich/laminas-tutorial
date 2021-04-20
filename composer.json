@@ -55,6 +55,7 @@
     },
     "require-dev": {
         "laminas/laminas-test": "^3.4",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "symfony/phpunit-bridge": "^5.2"
     }
 }
