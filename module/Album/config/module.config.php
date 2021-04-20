@@ -3,9 +3,15 @@
 namespace Album;
 
 use Laminas\Router\Http\Segment;
-use Laminas\ServiceManager\Factory\InvokableFactory;
+// use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
+    // 'controllers' => [
+    //     'factories' => [
+    //         Controller\AlbumController::class => InvokableFactory::class,
+    //     ],
+    // ],
+
     'router' => [
         'routes' => [
             'album' => [
@@ -16,8 +22,10 @@ return [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',
                     ],
-                    'defaults' => Controller\AlbumController::class,
-                    'action'   => 'index',
+                    'defaults' => [
+                        'controller' => Controller\AlbumController::class,
+                        'action'     => 'index',
+                    ],
                 ],
             ],
         ],
