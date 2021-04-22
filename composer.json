@@ -57,6 +57,7 @@
         "laminas/laminas-test": "^3.4",
         "phpunit/phpunit": "^9.5",
         "symfony/phpunit-bridge": "^5.2",
-        "laminas/laminas-navigation": "^2.11"
+        "laminas/laminas-navigation": "^2.11",
+        "laminas/laminas-paginator": "^2.10"
     }
 }
